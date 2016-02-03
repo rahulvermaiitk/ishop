@@ -4,12 +4,21 @@
 
 'use strict'
 
-function ishopRoute($urlRouterProvider, $locationProvider) {
-  $urlRouterProvider
-    .otherwise('/');
+function ishopRoute($stateProvider,$urlRouterProvider, $locationProvider) {
+ /* $urlRouterProvider
+    .otherwise('/');*/
+  $urlRouterProvider.otherwise('/home');
 
-  $locationProvider.html5Mode(true);
+ /* $locationProvider.html5Mode(true);*/
+
+  $stateProvider.state('home',{
+    'url': '/home',
+    'templateUrl': 'app/pages/home/home.html',
+    'controller': 'homeCtrl as hc'
+  });
+
+
 };
 
-app.config(['$urlRouterProvider', '$locationProvider', ishopRoute]);
+app.config(['$stateProvider','$urlRouterProvider', '$locationProvider', ishopRoute]);
 

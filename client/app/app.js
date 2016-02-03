@@ -1,9 +1,6 @@
 'use strict';
 
-angular.module('ishopApp', [
-  'ishopApp.auth',
-  'ishopApp.admin',
-  'ishopApp.constants',
+var app = angular.module('ishopApp', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
