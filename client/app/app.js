@@ -7,7 +7,8 @@ var app = angular.module('ishopApp', [
   'btford.socket-io',
   'ui.router',
   'ui.bootstrap',
-  'validation.match'
+  'validation.match',
+  'ngMaterial'
 ]);
 
 
