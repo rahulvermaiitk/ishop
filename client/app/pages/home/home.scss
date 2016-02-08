@@ -58,6 +58,7 @@ li a:hover {
 
 .logo-class{
   text-align: center;
+  display: inline-block;
 }
 .header-navigation{
 
@@ -67,6 +68,9 @@ li a:hover {
   font-weight: 600;
   margin-top: 20px;
   margin-bottom: 0px;
+  ul{
+    margin-left: 18%;
+  }
 }
 .navigation-second-tab{
   color:white !important;
@@ -95,6 +99,8 @@ li a:hover {
 }
 .shopping-item{
   min-width: 100%;
+  border-bottom: 2px solid black;
+  padding-bottom: 25px;
 }
 .coursel-container{
   min-width: 100%;
@@ -177,10 +183,13 @@ li a:hover {
   border-style: solid;
   border-width: 1px;
   border-color: #e1e1e1;
-
+  margin-right: 12px;
+  max-width: 32%;
 }
 .offer-body{
   text-align:center;
+  min-height: 198px;
+
 }
 .footer-list{
   list-style-type: none;
@@ -221,4 +230,55 @@ li a:hover {
 .black-background{
   background-color: black;
 
+}
+.drop-label{
+  display: inline-block;
+}
+.lang-drop{
+  display: inline-block;
+}
+.language-currency{
+  float: right;
+}
+.currency-drop{
+  display: inline-block;
+  float: right;
+}
+.cart-heading{
+  /*float: right;*/
+}
+.shop-now{
+  font-size: medium;
+  /* color: #ee372a; */
+  color: #ee372a;
+  text-transform: uppercase;
+  line-height: 1em;
+  font-weight: 700;
+  padding-top: 30px;
+  padding-right: 0px !important;
+  padding-bottom: 0px !important;
+  padding-left: 0px !important;
+}
+.shop-now a:hover{
+  background-color: #FFFFFF;
+}
+.shop-now::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 90px;
+  height: 2px;
+  background: #000;
+}
+.category-shopping{
+  .navbar-nav {
+    li {
+        a:hover{
+          background-color: #FFFFFF;
+
+      }
+    }
+
+  }
 }
