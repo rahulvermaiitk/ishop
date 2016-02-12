@@ -1,20 +1,15 @@
 'use strict';
 
-angular.module('ishopApp', [
-  'ishopApp.auth',
-  'ishopApp.admin',
-  'ishopApp.constants',
+var app = angular.module('ishopApp', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
   'btford.socket-io',
   'ui.router',
   'ui.bootstrap',
-  'validation.match'
-])
-  .config(function($urlRouterProvider, $locationProvider) {
-    $urlRouterProvider
-      .otherwise('/');
+  'validation.match',
+  'ngMaterial',
+  'slick'
+]);
 
-    $locationProvider.html5Mode(true);
-  });
+
