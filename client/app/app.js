@@ -8,7 +8,8 @@ var app = angular.module('ishopApp', [
   'ui.router',
   'ui.bootstrap',
   'validation.match',
-  'ngMaterial'
+  'ngMaterial',
+  'slick'
 ]);
 
 

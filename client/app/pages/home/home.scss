@@ -8,6 +8,15 @@
 .home-container{
   width: 100%;
   background-color: #F7F7F7;
+  /*transition: 3s;*/
+  .btn-default{
+    border-color: #FFFFFF;
+    font-size: 13px;
+  }
+  .btn-default:focus{
+    background-color: #FFFFFF;
+    border-width: 0px;
+  }
 }
 /*
 .navigation-top{
@@ -49,11 +58,12 @@ li a:hover {
   padding-right: 35px;
   display: inline;
   text-decoration: none;
+  vertical-align: sub;
   li {
     a:hover {
       text-decoration: none;
     }
-  }
+    }
 }
 
 .logo-class{
@@ -95,15 +105,17 @@ li a:hover {
 }
 .left-padding-class{
   padding-left: 3%;
-  max-width: 25%;
+ /* max-width: 25%;*/
+
 }
 .shopping-item{
   min-width: 100%;
   border-bottom: 2px solid black;
-  padding-bottom: 25px;
+  padding-bottom: 80px;
 }
 .coursel-container{
   min-width: 100%;
+  background-color: #FFFFFF;
 }
 .item-des{
   display: block;
@@ -116,6 +128,17 @@ li a:hover {
 .blog-des{
   display: block;
   word-wrap: break-word;
+  padding-top: 14px;
+  padding-bottom: 12px;
+}
+.blog-des::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 90px;
+  height: 2px;
+  background: #000;
 }
 .blog-list{
   display:inline;
@@ -183,8 +206,8 @@ li a:hover {
   border-style: solid;
   border-width: 1px;
   border-color: #e1e1e1;
-  margin-right: 12px;
-  max-width: 32%;
+ /* margin-right: 0px;*/
+ /* max-width: 32%;*/
 }
 .offer-body{
   text-align:center;
@@ -233,19 +256,46 @@ li a:hover {
 }
 .drop-label{
   display: inline-block;
+  color: #888;
+  font-size: 14px;
 }
 .lang-drop{
   display: inline-block;
 }
 .language-currency{
   float: right;
+  margin-left: 38%;
 }
 .currency-drop{
   display: inline-block;
-  float: right;
+  /*float: right;*/
 }
 .cart-heading{
   /*float: right;*/
+  margin-left: 3%;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000000;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 7px;
+}
+.shop-fav-logo{
+  padding-right: 14px;
+  color: red;
+}
+.fav-heading{
+  margin-left: 56%;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000000;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 7px;
 }
 .shop-now{
   font-size: medium;
@@ -281,4 +331,107 @@ li a:hover {
     }
 
   }
+}
+.offer-carousel{
+margin-top: 0px;
+padding-top: 45px;
+background-color: #FFFFFF;
+  margin-bottom:0px ;
+  padding-left: 0px;
+  margin-left: 41px;
+  margin-right: 25px;
+}
+.buy-icons {
+  display: none;
+}
+.product-listing{
+  /*transition-delay: 1s;*/
+
+}
+.product-listing:hover .buy-icons {
+  display: block;
+  text-decoration: none;
+  color:black;
+
+}
+.product-listing:focus{
+  text-decoration: none;
+
+}
+.shop-icon{
+  padding-left:5%;
+}
+.cost{
+  color: black;
+  font-weight: 600;
+  font-size: 18px;
+}
+.prod-name{
+  color:black;
+  font-weight: 300;
+  font-size: 14px;
+}
+.offer-carousel-heading{
+  padding-top: 30px;
+  background-color: #FFFFFF;
+  padding-left: 18px;
+  font-size: 18px;
+  font-weight: 600;
+
+}
+.offer-carousel-container{
+
+  background-color: #FFFFFF;
+  padding-bottom: 1px;
+}
+.top-header{
+  background-color: #FFFFFF;
+}
+.shop-cart-logo{
+  padding-right: 15px;
+  color: red;
+}
+.flex-width{
+  min-width: 100%;
+}
+.ishop-button{
+  margin-top: 3px;
+  padding-left: 0px;
+}
+.ishop-button:hover{
+  background-color: #FFFFFF;
+}
+a:hover{
+  text-decoration: none;
+}
+a:focus{
+  text-decoration: none;
+}
+.prod-slick-class{
+  max-width: 98%;
+  padding-left: 3%;
+  height: 307px;
+}
+.footer-list{
+  a:hover{
+    color: #EE372A;
+  }
+}
+.image-holder{
+  min-width: 100%;
+}
+.image-width{
+  min-width: 100%;
+  padding-left: 4px;
+}
+.one-div{
+
+}
+.blog-heading{
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  line-height: 26px;
+  color: #ee372a;
+  font-weight: 600;
+  text-transform: uppercase;
 }
